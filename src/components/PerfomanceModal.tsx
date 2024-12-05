@@ -12,7 +12,7 @@ const PerformanceModal: React.FC<PerformanceModalProps> = ({ student, onClose })
     
     datasets: [
       {
-       label:student.totalPercentage,
+       label:student.totalMark,
         data: student.subject,
          backgroundColor: ["#82c0fa ", "#82fab7 ", "#cdfa82 ", "#faa382 "],
       },
@@ -40,19 +40,19 @@ const PerformanceModal: React.FC<PerformanceModalProps> = ({ student, onClose })
         >
           ✕
         </button>
-        <h2 className="relative flex justify-center items-center text-2xl text-[#a12904] font-bold mb-4">{student.name}</h2>
+        <h2 className="relative flex justify-center items-center text-2xl text-[#0b5674] font-bold mb-4">{student.name}</h2>
         <div className="mb-6 bg-gray-50 p-4 rounded-md shadow-md">
   <p className="text-gray-700 font-medium">
-    <span className="text-[#CA7C4E] font-bold">Department:</span> {student.department}
+    <span className="text-[#11759d] font-bold">Department:</span> {student.department}
   </p>
   <p className="text-gray-700 font-medium mt-2">
-    <span className="text-[#CA7C4E] font-bold">Attendance:</span> {student.attendance}
+    <span className="text-[#11759d] font-bold">Attendance:</span> {student.attendance}
   </p>
   <p className="text-gray-700 font-medium mt-2">
-    <span className="text-[#CA7C4E] font-bold">Grade:</span> {student.grade}
+    <span className="text-[#11759d] font-bold">Grade:</span> {student.grade}
   </p>
   <p className="text-gray-700 font-medium mt-2">
-    <span className="text-[#CA7C4E] font-bold">Total Mark:</span> {student.TotalMark}
+    <span className="text-[#11759d] font-bold">Total Mark:</span> {student.totalMark}
   </p>
 </div>
 

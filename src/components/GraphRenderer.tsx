@@ -11,7 +11,7 @@ interface GraphRendererProps {
 const GraphRenderer: React.FC<GraphRendererProps> = ({ student }) => {
   const options = {
     responsive: true,
-    maintainAspectRatio: false,
+    // maintainAspectRatio: false,
   };
 
   return (
